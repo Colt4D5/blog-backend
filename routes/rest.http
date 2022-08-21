@@ -1,0 +1,28 @@
+### get all posts
+
+GET http://localhost:3000/api/v1/blog HTTP/1.1
+content-type: application/json
+
+### create a new post
+
+POST http://localhost:3000/api/v1/blog HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Blog title goes here!",
+  "body": "<p>This is where all the content goes and stuff...</p>"
+}
+
+### get one post by id
+
+GET http://localhost:3000/api/v1/blog/63028ea41087f391946a7f31 HTTP/1.1
+content-type: application/json
+
+### update post by id
+
+PATCH http://localhost:3000/api/v1/blog/63028ea41087f391946a7f31 HTTP/1.1
+content-type: application/json
+
+{
+  "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In arcu cursus euismod quis viverra. Quam viverra orci sagittis eu volutpat odio facilisis. Diam sit amet nisl suscipit. Ultricies tristique nulla aliquet enim tortor at auctor. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Tortor vitae purus faucibus ornare suspendisse sed. Non nisi est sit amet facilisis magna. Sed turpis tincidunt id aliquet. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. At imperdiet dui accumsan sit amet. Aliquam nulla facilisi cras fermentum odio eu feugiat. Stuff & stuff...</p>"
+}
